@@ -1,0 +1,813 @@
+fetch("http://api-dev.monsterra.io/nonce/create-nonce", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "cache-control": "no-cache",
+    "pragma": "no-cache"
+  },
+  "referrer": "http://testapi-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+});
+
+fetch("http://api-dev.monsterra.io/customer/register-by-wallet", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache"
+  },
+  "referrer": "http://testapi-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"nonce\":\"13521eed-7e40-4e81-86d8-26b7a1d0840a\",\"sign\":\"0x8bb1abc905ea5cfb9e841a7f6de31eff02a0a89967a17f2d5891f8412f1f42215db6b1018e5e159756eaf121808064bf6bb3880c935ac71574f3f3e9cc19b1041b\",\"type\":0}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+});
+
+// login
+fetch("https://api-dev.monsterra.io/nonce/create-nonce", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer null",
+    "cache-control": "no-cache",
+    "content-type": "application/json; charset=UTF-8",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://api-dev.monsterra.io/customer/login-customer", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer null",
+    "cache-control": "no-cache",
+    "content-type": "application/json; charset=UTF-8",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"sign\":\"0x0e13b7f15d1e063733912b1168433e693af91f5815dcd3108c285b45b79dad29537e0245ecdbbbd9265e03ea77bc21c03b946567f6a3baa0ae915a522fe117371b\",\"nonce\":\"db05c9ef-3976-43a0-a550-e5a6786427e5\"}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://api-dev.monsterra.io/config/get-config", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/get-items", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/update-customer-profile", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"name\":\"khanhnd​\"}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/increase-progress", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/increase-progress", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+//hatching
+fetch("https://api-dev.monsterra.io/plot/start-hatching", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"mongen_id\":1148,\"plot_id\":5171}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/increase-progress", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/plot/skip-time", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"plot_id\":5171}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/increase-progress", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/plot/claim-hatching", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"plot_id\":5171}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/increase-progress", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/mongen/attach-mongen", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"mongen_id\":1148,\"plot_id\":5168}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/increase-progress", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+// combo feed 1
+fetch("https://api-dev.monsterra.io/mongen/feed", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"mongen_id\":1148}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+// combo feed 2
+fetch("https://api-dev.monsterra.io/mongen/feed", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"mongen_id\":1148}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});// combo feed 3
+fetch("https://api-dev.monsterra.io/mongen/feed", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"mongen_id\":1148}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});// combo feed 4
+fetch("https://api-dev.monsterra.io/mongen/feed", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"mongen_id\":1148}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});// combo feed 5
+fetch("https://api-dev.monsterra.io/mongen/feed", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"mongen_id\":1148}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/quests/get-daily-quests-status", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+fetch("https://api-dev.monsterra.io/customer/increase-progress", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+// production
+fetch("https://api-dev.monsterra.io/plot/start-production", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"plot_id\":5169,\"production_mode\":0,\"mongen_ids\":[1148]}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+fetch("https://api-dev.monsterra.io/customer/increase-progress", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+// add cheat mstr to skip production hmmm
+
+// claim production hmmm
+fetch("https://api-dev.monsterra.io/plot/claim-production", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "Bearer 100737:7d9a9825-47c6-44f6-81b6-0e548788e539",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://play-dev.monsterra.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"plot_id\":5169}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});

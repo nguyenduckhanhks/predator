@@ -1,0 +1,1 @@
+docker run -d -e JOB_PLATFORM=DOCKER -e INTERNAL_ADDRESS=http://10.20.20.225:3001/v1 -p 3001:80 --name predator -v /var/run/docker.sock:/var/run/docker.sock zooz/predator:1.5
